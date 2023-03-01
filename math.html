@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script>
+	/*console.log(Math.ceil(12.1))
+	console.log(Math.floor(7.4))
+	console.log(Math.round(4.2))
+	console.log(Math.random())
+	console.log(Math.abs(-9999))
+	console.log(Math.sqrt(64))
+	console.log(Math.pow(3,9))*/
+
+
+	/*console.log(Math.floor(Math.pow(10,8)*Math.random()))
+
+	console.log(Math.floor(Math.pow(10,8)*Math.random()))
+	*/
+
+
+	var passwordList="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$&!"
+	var randomNumber=[]
+	for(var i=1;i<=8;i++)
+	{
+		generatedNum=parseInt(Math.random()*passwordList.length)
+		randomNumber.push(passwordList.charAt(generatedNum))
+	}
+	var finalRes=randomNumber.join('')
+	console.log(finalRes)
+	
+</script>
+</body>
+</html>
